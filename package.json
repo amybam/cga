@@ -1,0 +1,25 @@
+{
+    "name": "cga",
+    "displayName": "CGA Highlighter",
+    "description": "Syntax highlighting for cga",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cga",
+            "aliases": ["CGA", "cga"],
+            "extensions": [".cga"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cga",
+            "scopeName": "source.cga",
+            "path": "./syntaxes/cga.tmLanguage.json"
+        }]
+    }
+}

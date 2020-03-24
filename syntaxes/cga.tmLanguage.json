@@ -1,0 +1,69 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "CGA",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#constants"
+		},
+		{
+			"include": "#functions"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.cga",
+				"match": "\\b(if|while|for|return|case|else|import)\\b"
+			}]
+		},
+		
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.cga",
+					"begin": "\"",
+					"end": "\""
+				}
+			]
+		},
+
+		"variables":{
+			"patterns":[
+				{
+					"name": "storage.type",
+					"match": "\\b(?i)(attr|version|const|Type)\\b"
+				}
+			]
+		},
+		"constants":{
+			"patterns": [
+				{
+					"name":"constant.language",
+					"match": "\\b(?i)(@StartRule|@hidden|@distance)\\b"
+				}
+			]
+		},
+		"functions":{
+			"patterns": [
+				{
+					"name":"entity.name.function",
+					"match": "(\\b(@Group()(.*?)())|(@order()(.*?)())|(@Enum()(.*?)())|(@range()(.*?)())|(@Descriptions()(.*?)())|(sqrt()(.*?)())|(translate()(.*?)())|(comp()(.*?)())|(extrude()(.*?)())|(setback()(.*?)())||(ShapeU()(.*?)())|(color()(.*?)())|(SetbackToArea()(.*?)()))\\b"
+				}
+			]
+		}
+
+	},
+	"scopeName": "source.cga"
+}
