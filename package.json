@@ -3,6 +3,7 @@
     "displayName": "CGA Highlighter",
     "description": "Syntax highlighting for cga",
     "version": "0.0.1",
+    "publisher": "amybam",
     "engines": {
         "vscode": "^1.43.0"
     },

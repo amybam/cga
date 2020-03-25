@@ -50,8 +50,8 @@
 		"constants":{
 			"patterns": [
 				{
-					"name":"constant.language",
-					"match": "\\b(?i)(@StartRule|@hidden|@distance)\\b"
+					"name":"entity.name.type",
+					"match": "\\b(?i)(StartRule|Hidden|distance)\\b"
 				}
 			]
 		},
@@ -59,7 +59,7 @@
 			"patterns": [
 				{
 					"name":"entity.name.function",
-					"match": "(\\b(@Group()(.*?)())|(@order()(.*?)())|(@Enum()(.*?)())|(@range()(.*?)())|(@Descriptions()(.*?)())|(sqrt()(.*?)())|(translate()(.*?)())|(comp()(.*?)())|(extrude()(.*?)())|(setback()(.*?)())||(ShapeU()(.*?)())|(color()(.*?)())|(SetbackToArea()(.*?)()))\\b"
+					"match": "(\\b(Group()(.*?)())|(order()(.*?)())|(Enum()(.*?)())|(range()(.*?)())|(Descriptions()(.*?)())|(sqrt()(.*?)())|(translate()(.*?)())|(comp()(.*?)())|(extrude()(.*?)())|(setback()(.*?)())||(ShapeU()(.*?)())|(color()(.*?)())|(SetbackToArea()(.*?)()))\\b"
 				}
 			]
 		}
